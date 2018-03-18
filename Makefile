@@ -1,6 +1,9 @@
 lvm: lvm.c lvm.h
-	gcc -O3 lvm.c -o lvm
+	gcc -g3 -O3 lvm.c -o lvm
+	gcc -g3 -O3 thread.c -o thread
 
 clean:
 	rm lvm
-	rm virtmem_dump
+	rm thread
+	rm struct.dump
+	rm gdbcmds
